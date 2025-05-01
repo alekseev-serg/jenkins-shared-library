@@ -12,4 +12,8 @@ def call(){
 
     notify.info('Start Build')
 
+    echo "Build"
+
+    notify.success('Build complete')
+
 }
