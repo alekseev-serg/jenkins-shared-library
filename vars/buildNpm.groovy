@@ -10,8 +10,6 @@ def call(){
 
     def notify = new Notifier(this)
 
-    notify.info('Start Build')
-
     echo "Build"
 
     notify.success('Build complete')
