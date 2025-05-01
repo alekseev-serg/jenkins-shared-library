@@ -1,10 +1,10 @@
 // write Class
 package ru.devops
 
-class Script implements Serializable {
+class Greeting implements Serializable {
     def steps;
 
-    Script(steps){
+    Greeting(steps){
         this.steps = steps;
     }
 

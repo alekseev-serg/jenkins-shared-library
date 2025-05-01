@@ -4,7 +4,11 @@ import ru.devops.*
 def call(){
 
     echo "Hello from Vars library!";
-    def helper  = new Script(this)
+    def helper  = new Greeting(this)
     helper.greet('Devops')
-    
+
+    def notify = new Notifier(this)
+
+    notify.message()
+
 }
