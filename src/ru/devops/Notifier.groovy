@@ -2,13 +2,23 @@
 package ru.devops
 
 class Notifier implements Serializable {
-    def msg;
+    def steps;
 
     Notifier(steps){
-        this.msg = msg;
+        this.steps = steps;
     }
-    def message(){
-        msg.echo "Build is complete";
+    
+
+    def info(String message) {
+        steps.echo "[INFO] ${message}"
+    }
+
+    def success(String message) {
+        steps.echo "[SUCCESS] ✅ ${message}"
+    }
+
+    def error(String message) {
+        steps.echo "[ERROR] ❌ ${message}"
     }
 
 }
